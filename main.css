@@ -1,0 +1,148 @@
+.dropdown:hover .dropdown-menu {
+  display: block;}
+  .header .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Màu nền cho header và hiệu ứng đổ bóng */
+.header {
+  background-color: #e0e0e0; /* Màu xám sáng */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng nhẹ */
+}
+
+
+/* Import Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.sitename {
+     font-family: 'Roboto', sans-serif; /*Thay thế bằng font bạn muốn */
+    font-weight: bold;
+    font-size: 2rem; /* Tùy chỉnh kích thước chữ */
+    color: #333; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.logo {
+    text-decoration: none; /* Loại bỏ gạch chân của link */
+}
+
+.logo:hover .sitename {
+    color: #007bff; /* Màu khi di chuột qua */
+}
+
+
+
+.text-carousel {
+  font-family: 'Lora', serif; /* Thay thế font bạn muốn */
+  font-weight: 700; /* Đậm nét */
+  font-size: 2rem; /* Tùy chỉnh kích thước chữ */
+  color: #333; /* Màu chữ */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  
+    margin-top: 20px; /* Khoảng cách phía trên */
+    margin-bottom: 20px; /* Khoảng cách phía dưới */
+}
+
+
+/* Đảm bảo rằng header có đủ khoảng cách */
+.header {
+  position: relative;
+  z-index: 1000; /* Đảm bảo header ở trên các phần tử khác */
+}
+
+/* Đặt vị trí của các nút đăng ký và đăng nhập */
+.auth-buttons {
+  position: absolute; /* Định vị nút tuyệt đối */
+  top: 57px; /* Điều chỉnh khoảng cách từ header */
+  right:120px; /* Canh phải */
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các nút */
+  z-index: 1000; /* Đảm bảo nút ở trên các phần tử khác */
+}
+
+/* Chỉnh sửa nút */
+.auth-buttons .btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Đảm bảo carousel không bị đè lên nút */
+.carousel {
+  margin-top: 40px; /* Điều chỉnh khoảng cách giữa header và carousel */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: #343a40; /* Dark background */
+  color: #fff; /* White text */
+}
+
+.footer .footer-about .logo .sitename {
+  font-size: 1.75rem; /* Font size for the logo */
+  font-weight: 700; /* Bold font */
+  color: #fff; /* White color for the sitename */
+}
+
+.footer-contact p {
+  color: #ddd; /* Light grey for text */
+}
+
+.footer-links h4 {
+  color: #fff; /* White for the section titles */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-links ul li a {
+  color: #ddd; /* Light grey for the links */
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #f0b350; /* Hover color */
+}
+
+
+
+
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none; /* Mặc định ẩn */
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 20px;
+  background-color: #007bff; /* Màu nền cho nút */
+  color: white; /* Màu chữ */
+  border: none; /* Xóa border */
+  cursor: pointer; /* Con trỏ chuột */
+}
+
+#scrollToTopBtn.show {
+  display: block; /* Hiển thị khi cuộn xuống */
+}
+
